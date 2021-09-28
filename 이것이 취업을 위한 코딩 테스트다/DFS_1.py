@@ -18,7 +18,7 @@ def cream(x, y, ice, visited):
             visited[x][y] = 1
             cream(x-1, y, ice, visited)
             cream(x, y+1, ice, visited)
-            cream(x-1, y, ice, visited)            
+            cream(x+1, y, ice, visited)            
             cream(x, y-1, ice, visited)            
             return True
 
@@ -26,8 +26,4 @@ for j in range(n):
     for k in range(m):
         if cream(j,k,ice,visited) == 1:
             cnt+=1
-
-for i in range(n):
-    print(visited[i])
-
 print(cnt)
