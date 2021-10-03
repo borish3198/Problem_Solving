@@ -18,21 +18,21 @@ def bfs(i, j):
         if graph[nx][ny]==0:
             graph[nx][ny] = graph[x][y]+1
             queue.append((nx,ny))
-        elif graph[nx][ny]==-1 or 1:
-            continue
-        else:
+        elif graph[nx][ny]>=graph[x][y]+1:
             queue.append((nx,ny))
-            if graph[nx][ny]>=graph[x][y]+1:
-                graph[nx][ny]=graph[x][y]+1
+            graph[nx][ny]=graph[x][y]+1
+        else:
+            continue
 
 for i in range(n):
   for j in range(m):
     if graph[i][j]==1:
-        print(i,j)
         bfs(i,j)
 
-for i in range(n):
-    print(graph[i])
-
 max=max(map(max, graph))
+
+for i in range(n):
+    if 0 in graph[i]:
+        max=0
+
 print(max-1)
