@@ -1,4 +1,4 @@
-# This problem requires the numver of computers infected considering the networks environment.
+# This problem requires the number of computers infected considering the networks environment.
 # The virus only can affect other computers that are connected in the network containing the host(#1)
 # At the first line the number of computers are given and at the second line the number of connections are given
 # In sequence, information of connections are offered
