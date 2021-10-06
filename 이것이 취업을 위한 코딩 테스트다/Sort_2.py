@@ -10,4 +10,4 @@ for i in range(1, len(data)):
             data[j], data[j-1] = data[j-1], data[j]
 
 for i in data:
-  print(i[1])
+  print(i[0], end=" ")
