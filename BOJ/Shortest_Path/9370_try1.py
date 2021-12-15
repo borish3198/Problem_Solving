@@ -1,3 +1,8 @@
+'''
+1트 : 접근은 맞으나 7%에서 시간초과 발생
+'''
+
+
 import sys
 import heapq
 
