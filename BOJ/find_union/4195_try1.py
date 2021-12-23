@@ -1,3 +1,7 @@
+'''
+시간 초과로 실패
+'''
+
 n = int(input())
 
 def find(a):
