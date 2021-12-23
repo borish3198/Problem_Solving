@@ -1,5 +1,6 @@
 '''
-input, print 대신 sys라이브러리의 stdin, stdout 사용하여 시간초과 문제 해결
+add 함수에서 새로 추가된 친구가 이미 딕셔너리에 있는지 확인하고자 in 함수를 사용하였는데, 이 때 paret.keys()를 리스트로 변환하지 않고 그대로 사용, 시간초과 문제 해결
+input, print 대신 sys라이브러리의 stdin, stdout 사용하여 실행시간 단축
 but, 출력초과 문제 발생
 '''
 
