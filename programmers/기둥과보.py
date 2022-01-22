@@ -1,3 +1,9 @@
+'''
+테스트 케이스 2개만 맞춘 틀린 코드..
+테스트 케이스 23개 중 2개 정답, 4개 오답, 17개 런타임 에러
+'''
+
+
 def check_col(order, column, beam):
     if order[1]==0 or order[0:2] in [[b[0],b[1]+1] for b in column]:
         return 1
